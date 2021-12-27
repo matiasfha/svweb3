@@ -108,12 +108,6 @@ export function useWeb3({ init, onConnect, onDisconnect, onAccountsChanged }: Us
 		}
 	}
 
-	onDestroy(() => {
-		if (browser) {
-			window.ethereum.removeAllListeners();
-		}
-	});
-
 	return {
 		subscribe: store.subscribe,
 		connect
