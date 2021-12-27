@@ -7,7 +7,7 @@
   },
   "homepage": "https://github.com/matiasfha/svweb3",
   "license": "MIT",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "scripts": {
     "package": "svelte-kit package",
     "check": "svelte-check --tsconfig ./tsconfig.json",
