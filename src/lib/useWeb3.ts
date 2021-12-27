@@ -66,7 +66,7 @@ export function useWeb3({ init, onConnect, onDisconnect, onAccountsChanged }: Us
 	}
 
 	async function initialize() {
-		if (window) {
+		if (global.window) {
 			//@ts-ignore
 			const provider = new ethers.providers.Web3Provider(window.ethereum);
 			const signer = provider.getSigner();
